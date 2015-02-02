@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magedevel.coffecup" >
+
+    <!-- Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Permission to use camera http://developer.android.com/training/camera/photobasics.html -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="DATABASE"
+            android:value="coffecup.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.magedevel.coffecup" />
+
+        <activity
+            android:name=".StartUp"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.Main"
+            android:label="@string/title_activity_main"
+            android:parentActivityName=".StartUp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.magedevel.coffecup.StartUp" />
+        </activity>
+        <activity
+            android:name=".newsreader.RssItemListActivity"
+            android:label="@string/title_rssitem_list"
+            android:parentActivityName=".main.Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.magedevel.coffecup.main.Main" />
+        </activity>
+        <activity
+            android:name=".newsreader.RssItemDetailActivity"
+            android:label="@string/title_rssitem_detail"
+            android:parentActivityName=".newsreader.RssItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.magedevel.coffecup.newsreader.RssItemListActivity" />
+        </activity>
+        <activity
+            android:name=".newsreader.EditRssItem"
+            android:label="@string/title_activity_edit_rss_item"
+            android:noHistory="true"
+            android:parentActivityName=".newsreader.RssItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.magedevel.coffecup.newsreader.RssItemListActivity" />
+        </activity>
+        <activity
+            android:name=".newsreader.RssItemData"
+            android:label="@string/title_activity_rss_item_data"
+            android:parentActivityName=".newsreader.RssItemDetailActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.magedevel.coffecup.newsreader.RssItemDetailActivity" />
+        </activity>
+    </application>
+
+</manifest>

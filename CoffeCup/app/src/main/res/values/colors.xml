@@ -1,0 +1,11 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="darkgreen">#CC000000</color>
+    <color name="button_pressed">#ffbac4c9</color>
+    <color name="button_focus">#90c56427</color>
+    <color name="button_default">#ff1c213e</color>
+    <color name="standard_background">#304e91cc</color>
+
+
+</resources>

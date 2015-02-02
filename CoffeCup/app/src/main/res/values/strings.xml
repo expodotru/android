@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CoffeCup</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">Coffe Cup</string>
+    <string name="title_section1">Dati Cambio</string>
+    <string name="title_section2">News Reader</string>
+    <string name="title_section3">Previsioni meteo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_reload">Ricarica</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_rssitem_list">RssItems</string>
+    <string name="title_rssitem_detail">RssItem Detail</string>
+    <string name="message_no_rss_found">Nessuna fonte Rss trovata</string>
+    <string name="title_activity_edit_rss_item">EditRssItem</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="RssInsertTitolo">Titolo</string>
+    <string name="RssInsertLink">Link Rss</string>
+    <string name="title_activity_rss_item_data">RssItemData</string>
+
+</resources>

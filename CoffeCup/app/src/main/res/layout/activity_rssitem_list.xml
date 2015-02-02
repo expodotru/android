@@ -1,0 +1,60 @@
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|top"
+        android:id="@+id/relativeBottom"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rssitem_list"
+            android:name="com.magedevel.coffecup.newsreader.RssItemListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            tools:context="com.magedevel.coffecup.newsreader.RssItemListActivity"
+            tools:layout="@android:layout/list_content" >
+        </fragment>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout"
+
+            >
+            <Button
+                android:id="@+id/btnEliminaRssItem"
+                android:layout_width="0dp"
+                android:layout_height="42dip"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#fff"
+                android:text="Elimina"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/button_custom"
+                />
+            <View android:layout_height="fill_parent"
+                android:layout_width="2px"
+                android:background="#fff"/>
+            <Button
+                android:id="@+id/btnAddRssItem"
+                android:layout_width="0dp"
+                android:layout_height="42dip"
+                android:layout_weight="1"
+                android:text="Aggiungi"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/btnEliminaRssItem"
+                android:background="@drawable/button_custom"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+

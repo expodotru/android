@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.magedevel.coffecup.newsreader.EditRssItem$PlaceholderFragment"
+    >
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="67dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSetRssTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/RssInsertTitolo"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/spnCategory"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSetRssLink"
+        android:layout_below="@+id/txtSetRssTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/RssInsertLink"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+
+        >
+        <Button
+            android:id="@+id/btnTestRssItem"
+            android:layout_width="0dp"
+            android:layout_height="42dip"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#fff"
+            android:text="Test"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:background="@drawable/button_custom"
+            />
+        <View android:layout_height="fill_parent"
+            android:layout_width="2px"
+            android:background="#fff"/>
+    <Button
+        android:id="@+id/btnSaveRssItem"
+        android:layout_width="0dp"
+        android:layout_height="42dip"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#fff"
+        android:text="Salva"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:background="@drawable/button_custom"
+        />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
