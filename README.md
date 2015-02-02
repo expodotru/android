@@ -1,7 +1,7 @@
 android
 =======
 
-Android public project, examples and useful stuff
+Questo repository racchide i progetti Android di studio fatti per divertimento e per fare palestra con Android, applicare le migliori pratiche fare prototipi per riutilizzare il codice e per sperimentare.
 
 CoffeCup
 =======
