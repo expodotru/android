@@ -15,6 +15,6 @@ L'applicazione ha le seguenti funzionalità
 <li>Leggere i dati di cambio da yahoo</li>
 <li>Leggere le infomazioni sul meteo locale con un forecast fino a 16 giorni</li>
 <li>Leggere delle news da diverse fonti RSS</li>
-<ul>
+</ul>
 <h2>Dove vogliamo arrivare?</h2>
 Allo stato attuale il progetto non utiliza particolari pattern di sviluppo. Lo scopo è quello di arrivare per gradi di refactor del codice a un progetto MVP con dagger come Dependency injector. 
